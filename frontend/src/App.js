@@ -98,7 +98,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route
               path="/*"
-              element="
+              element={
                 <ProtectedRoute>
                   <Layout>
                     <Routes>
@@ -112,7 +112,7 @@ function App() {
                     </Routes>
                   </Layout>
                 </ProtectedRoute>
-              "
+              }
             />
           </Routes>
         </BrowserRouter>
